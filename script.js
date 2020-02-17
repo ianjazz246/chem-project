@@ -324,7 +324,8 @@ class AlbedoScene extends BaseScene {
 				scale: 0.02,
 				lifespan: 8000,
 				frequency: 190
-			}
+			},
+			0.2
 		);
 
 		this.addAlbedoDemonstration(
@@ -337,24 +338,13 @@ class AlbedoScene extends BaseScene {
 				scale: 0.02,
 				lifespan: 8000,
 				frequency: 190
-			}
+			},
+			0.2
 		);
 
+		
 		this.addAlbedoDemonstration(
-			430, 450, "snow", 0.95,
-			"Fresh Snow (95%)",
-			"",
-			{
-				speedX: 80,
-				speedY: 80,
-				scale: 0.02,
-				lifespan: 8000,
-				frequency: 190
-			}
-		);
-
-		this.addAlbedoDemonstration(
-			680, 450, "seaice", 0.4,
+			430, 450, "seaice", 0.4,
 			"Sea Ice (30-45%)",
 			"",
 			{
@@ -363,8 +353,24 @@ class AlbedoScene extends BaseScene {
 				scale: 0.02,
 				lifespan: 8000,
 				frequency: 190
-			}
+			},
+			0.2
 		);
+
+		this.addAlbedoDemonstration(
+			680, 450, "snow", 0.95,
+			"Fresh Snow (95%)",
+			"",
+			{
+				speedX: 80,
+				speedY: 80,
+				scale: 0.02,
+				lifespan: 8000,
+				frequency: 190
+			},
+			0.2
+		);
+
 
 		this.add.text(400, 10, "Albedo", {fontSize: "20px"});
 
