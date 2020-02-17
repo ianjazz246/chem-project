@@ -62,7 +62,6 @@ class MenuScene extends Phaser.Scene {
 		btn.on("pointerdown", onClick.bind(this));
 
 		function onClick() {
-			console.log("Clicked");
 			this.scene.start(scene);
 			//this.scene.setVisible(false);
 		}
@@ -112,8 +111,8 @@ class BaseScene extends Phaser.Scene {
 		let text = this.add.text(15, 15, "Main Menu", {});
 
 		rect.setInteractive().on("pointerdown", (function() {this.scene.start("menu")}).bind(this))
-			.on("pointerover", function() {console.log("pointer"); rect.setFillStyle(0x555555)})
-			.on("pointerout", function() {console.log("pointer"); rect.setFillStyle(0x333333)});
+			.on("pointerover", function() {rect.setFillStyle(0x555555)})
+			.on("pointerout", function() {rect.setFillStyle(0x333333)});
 
 		/* let menuButton = this.add.container(25, 25, [rect, text]).setSize(rect.width, rect.height).setInteractive()
 			.on("pointerdown", (function() {this.scene.start("menu")}).bind(this))
@@ -122,8 +121,6 @@ class BaseScene extends Phaser.Scene {
 		
 
 		function nextScene() {
-			console.log("Next");
-
 			let index = this.scene.getIndex(this.scene.key);
 			
 			if (index < this.scene.manager.scenes.length-1) {
@@ -132,8 +129,6 @@ class BaseScene extends Phaser.Scene {
 		}
 
 		function prevScene() {
-			console.log("Prev");
-
 			let index = this.scene.getIndex(this.scene.key);
 
 			if (index > 0) {
