@@ -224,7 +224,7 @@ class RadiationScene extends BaseScene {
 
 		this.add.rectangle(0, 450, 800, 130, "black", 0.5).setOrigin(0);
 		this.add.text(400, 10, "Radiation", {fontSize: "20px"}).setOrigin(0.5, 0);
-		this.add.text(300, 450, "Earth's incoming energy comes from the Sun in the form of solar radiation. The Sun's rays reach Earth in essentially parallel lines. At different latitudes, the angle of the Sun's rays are different, so Earth receives different amounts of solar radiation per unit area. The equator is hit by the Sun's rays perpendicularly, receiving the most radiation. The poles are hit by the Sun's rays parallelly, receiving the least radiation. Different sunlight angles are the reason for the distinct climate at various latitudes.", 
+		this.add.text(400, 450, "Earth's incoming energy comes from the Sun in the form of solar radiation. The Sun's rays reach Earth in essentially parallel lines. At different latitudes, the angle of the Sun's rays are different, so Earth receives different amounts of solar radiation per unit area. The equator is hit by the Sun's rays perpendicularly, receiving the most radiation. The poles are hit by the Sun's rays parallelly, receiving the least radiation. Different sunlight angles are the reason for the distinct climate at various latitudes.", 
 		{
 			wordWrap: {
 				width: 750
@@ -371,7 +371,7 @@ class AlbedoScene extends BaseScene {
 
 		this.add.text(60, 50, [
 			"Albedo is the percentage of light that is reflected by a surface. The higher the albedo, the more reflective a surface is. Different surfaces have different albedos, with dark surfaces tending to have higher albedos than light ones.",
-			"Cities have more asphalt and dark surfaces, with higher albedos, than the natural land around them, which have lower albedo surfaces such as forests and grasslands. This is the reason why cities tend to be warmer than the natural land around them."
+			"Cities have more asphalt and dark surfaces, with higher albedos, than the natural land around them, which have lower albedo surfaces such as forests and grasslands. This is the reason why cities tend to be warmer than the surrounding areas."
 		],
 		{
 			wordWrap: {width: 260, useAdvancedWrap: true}
@@ -590,8 +590,9 @@ class GreenhouseScene extends BaseScene {
 		photon.initialVelY = -2;
 
 		this.add.text(400, 10, "The Greenhouse Effect", {fontSize: "20px"}).setOrigin(0.5, 0);
-		this.add.text(50, 180, "Some solar radiation is reflected by or absorbed by the atmosphere. Most reaches the surface and is either absorbed or reflected.", {wordWrap: {width: 100}});
-		this.add.text(390, 50, "Some infrared radiation emitted by the surface is absorbed by the atmosphere and reemitted in all directions. Some radiation returns to the surface, warming the Earth. This also warms the atmosphere. Gases like carbon dioxide, methane, and water vapor are especially good at absorbing and remitting infrared radiation, so they are called greenhouse gases. Without an atmosphere, all emitted infrared radiation would go to space and not warm Earth.",
+		this.add.text(50, 180, "Some solar radiation is reflected or absorbed by the atmosphere. Most reaches the surface and is either absorbed or reflected.", {wordWrap: {width: 100}});
+		this.add.text(400, 500, "Yellow circle: Photon from sun\nRed circle: Infrared photon from Earth's surface", {align: "center"}).setOrigin(0.5, 0);
+		this.add.text(390, 50, "All objects above absolute zero emit	o infrared radiation. Part of the infrared radiation emitted by the surface is absorbed by the atmosphere and re-emitted in all directions. Some of the re-emitted radiation returns to the surface amd warms the Earth--this process is the greenhouse effect. This also warms the atmosphere. Gases like carbon dioxide, methane, and water vapor are especially good at absorbing and remitting infrared radiation, so they are called greenhouse gases. Without an atmosphere, all surface-emitted infrared radiation would go to space and not warm Earth.",
 			{
 				wordWrap: {width: 380},
 				backgroundColor: "#000000aa"
@@ -687,7 +688,7 @@ class CarbonScene extends BaseScene {
 
 		this.add.text(400, 10, "Carbon Emissions", {fontSize: "20px"}).setOrigin(0.5, 0);
 
-		this.add.text(250, 50, ["\tHuman activities are releasing more greenhouse gases into the atmosphere, especially carbon dioxide. As a result, the greenhouse effect is becoming more powerful: more infrared radiation is being reemitted back to the surface. This is causing less energy to leave the planet, changing the energy balance and warming the planet.",
+		this.add.text(250, 50, ["\tHuman activities are releasing more greenhouse gases into the atmosphere, especially carbon dioxide. As a result, the greenhouse effect is becoming stronger: more infrared radiation is being reemitted back to the surface. This is causing less energy to leave Earth, changing the planet's energy balance and warming the planet.",
 			"\tThe amount of greenhouse gases released by someone/something is called their carbon footprint. Almost everything you do has a carbon footprint, from driving a car to using electricity. To decrease your carbon footprint and help reduce climate change, you can take various actions like driving less, eating less meat, or buying eco-friendly products. Online carbon footprint calculators can help you."],
 			{
 				wordWrap: {width: 530},
@@ -754,7 +755,7 @@ class FeedbackLoopScene extends BaseScene {
 
 		super.addTitle("Feedback Loops", {fontSize: "20px", color: "black"});
 		this.add.text(20, 450, ["Climate change is especially worrying because of feedback loops, self-reinforcing cycles whose effects further exacerbates their cause. This makes the process run faster and faster.",
-		"Melting sea ice is an example of this. Ice is normally quite reflective compared to sea water. As temperatures rise, sea ice melts, exposing the darker water, which absorbs more sunlight. This in turn heats up Earth more, melting more ice and speeding up the process. "],
+		"Melting sea ice is an example of such a feedback loop. Ice is normally quite reflective compared to sea water. As temperatures rise, sea ice melts, exposing the darker water, which absorbs more sunlight. This in turn heats up Earth more, melting more ice and speeding up the process. "],
 		{
 			wordWrap: {
 				width: 740
@@ -813,7 +814,7 @@ class EffectsScene extends BaseScene {
 		});
 
 		super.addTitle("Climate Change Effects");
-		this.add.text(400, 430, "One effect of climate change is coral bleaching. Coral bleaching occurs when increased temperatures cause the symbiotic algae on corals to produce damaging oxygen molecules. This causes the coral to eject the algae, making the coral appear white. If the coral are without their algae for too long, they will likely die. This is very worrying because coral reefs are a critical marine habitat with 25% of marine biodiversity.", {
+		this.add.text(400, 430, "One effect of climate change is coral bleaching. Coral bleaching occurs when increased temperatures cause the symbiotic algae on corals to produce damaging oxygen molecules. 	In response, the coral eject the colorful algae, leaving their white skeleton behind. If the coral are without their algae for too long, they will likely die. This is very worrying because coral reefs are a critical marine habitat with 25% of marine biodiversity.", {
 			wordWrap: {
 				width: 700
 			}
